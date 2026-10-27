@@ -18,10 +18,17 @@ Square corners throughout. Minimal motion: only small hover color changes and na
 
 ## Site structure
 
-1. **Home** — oversized typographic introduction, selected work, research theme, writing preview.
+1. **Home** — typographic introduction that fits the name and positioning line in a 13-inch laptop viewport; a dedicated experience section; a research and projects invitation; and a writing preview.
 2. **Experience** — work at Millennium Management, Meet Magellan, and Deloitte Consulting.
 3. **Research + projects** — responsible AI research and selected technical projects, beginning with Pinlog from HackCMU 2026.
 4. **Writing** — empty until Nicole publishes an approved first post.
+
+## Homepage reading journey
+
+- **01 / Introduction:** Keep the assertive name treatment, with the positioning sentence visible in a short laptop viewport.
+- **02 / Experience:** Show the three professional roles together. Keep research projects out of this section, matching the Experience navigation tab.
+- **03 / Research + Projects:** Preserve “BUILDING WITH INTENTION.” and the paragraph about reliability, accountability, and useful AI. Use a light gray surface, a deeper fuchsia on “INTENTION.”, and an electric fuchsia frame around the button. Keep the narrative composition rather than adding project cards here.
+- **04 / Writing:** Continue as the restrained preview for future posts.
 
 ## Content voice
 

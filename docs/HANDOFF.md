@@ -7,7 +7,7 @@ Updated 2026-10-27.
 - Astro static site skeleton with responsive home, experience, research/project, and writing pages.
 - Content collections for experience, research, and blog. The blog contains only an unpublished draft template.
 - GitHub Pages workflow. The existing public repository `nicolelyu021/nicolelyu021.github.io` is connected. The site is on the `site-v1` review branch in draft PR #1 (https://github.com/nicolelyu021/nicolelyu021.github.io/pull/1); it has not been merged or published as the homepage.
-- Design system from the supplied palette and layout screenshots.
+- Design system from the supplied palette and layout screenshots. The homepage hero has been tightened for a 13-inch laptop viewport; Section 02 now shows only the three experience roles; Section 03 uses a light surface with fuchsia accents and keeps its existing narrative copy. See `docs/DESIGN_BRIEF.md`.
 - First-draft public summaries from Nicole's resumes. These need Nicole's review before publication.
 
 ## Source materials
