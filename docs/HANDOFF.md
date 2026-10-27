@@ -6,7 +6,7 @@ Updated 2026-10-27.
 
 - Astro static site skeleton with responsive home, experience, research/project, and writing pages.
 - Content collections for experience, research, and blog. The blog contains only an unpublished draft template.
-- GitHub Pages workflow; repository and public site are not yet created.
+- GitHub Pages workflow. The existing public repository `nicolelyu021/nicolelyu021.github.io` has been connected and its placeholder history merged locally; the new site has not been uploaded or published yet.
 - Design system from the supplied palette and layout screenshots.
 - First-draft public summaries from Nicole's resumes. These need Nicole's review before publication.
 
@@ -24,7 +24,7 @@ Updated 2026-10-27.
 2. Approve or revise the home-page positioning line and all public project descriptions.
 3. Add Nicole's exact contribution and final outcome for Pinlog; add other research or project pieces if desired.
 4. Choose the first blog post and any LinkedIn or other links to publish.
-5. Create a GitHub repository and enable GitHub Pages after the content review.
+5. After content review, push the site to the existing `nicolelyu021.github.io` repository and choose GitHub Actions as the Pages source.
 
 ## How to continue
 

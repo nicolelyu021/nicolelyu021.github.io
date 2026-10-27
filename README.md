@@ -29,11 +29,8 @@ npm run build
 
 Add a Markdown file to a collection to create a page. Set `featured: true` on experience or research entries to show them on the home page. The design and content decisions are in `docs/DESIGN_BRIEF.md`; the next-step checklist is in `docs/HANDOFF.md`.
 
-## Publish later
+## Existing GitHub repository
 
-1. Review public copy, especially employer and research descriptions.
-2. Create a GitHub repository and push this folder to its `main` branch.
-3. In the GitHub repository, go to **Settings → Pages** and choose **GitHub Actions** as the source.
-4. The included workflow builds and publishes the site. It derives the repository path automatically for a GitHub Pages project site.
+The repository [`nicolelyu021/nicolelyu021.github.io`](https://github.com/nicolelyu021/nicolelyu021.github.io) already exists. The local `origin` points to it, and its one-file history has been merged into this local project. The site has **not** been uploaded or published yet.
 
-No remote repository or public site has been created yet.
+Before publishing, review the public copy, especially employer and research descriptions. Then push `main` to the existing repository, choose **GitHub Actions** under **Settings → Pages → Build and deployment → Source**, and let the included workflow build and deploy the site at `https://nicolelyu021.github.io/`.
