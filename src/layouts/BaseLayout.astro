@@ -1,0 +1,51 @@
+---
+import { pathFor } from '../lib/paths';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  active?: 'home' | 'experience' | 'research' | 'writing';
+}
+
+const { title, description, active } = Astro.props;
+const nav = [
+  { label: 'Home', href: '/', key: 'home' },
+  { label: 'Experience', href: '/experience/', key: 'experience' },
+  { label: 'Research + projects', href: '/research/', key: 'research' },
+  { label: 'Writing', href: '/writing/', key: 'writing' },
+] as const;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#111111" />
+    <title>{title} · Nicole Lyu</title>
+    <link rel="icon" href={pathFor('/favicon.svg')} type="image/svg+xml" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="masthead">
+        <a class="wordmark" href={pathFor('/')} aria-label="Nicole Lyu, home">NICOLE LYU<span class="wordmark-dot">.</span></a>
+        <span class="masthead-note">PORTFOLIO / 2026</span>
+      </div>
+      <nav class="site-nav" aria-label="Main navigation">
+        {nav.map((item) => <a href={pathFor(item.href)} aria-current={active === item.key ? 'page' : undefined}>{item.label}</a>)}
+      </nav>
+    </header>
+    <main id="main"><slot /></main>
+    <footer class="site-footer">
+      <div>
+        <span class="eyebrow">LET'S CONNECT</span>
+        <p>Interested in AI systems, research, or a good question?</p>
+      </div>
+      <a class="footer-contact" href="mailto:nicolely@andrew.cmu.edu">SAY HELLO <span aria-hidden="true">↗</span></a>
+      <div class="footer-bottom"><span>© {new Date().getFullYear()} NICOLE LYU</span><a href="https://github.com/nicolelyu021" target="_blank" rel="noopener noreferrer">GITHUB ↗</a></div>
+    </footer>
+  </body>
+</html>

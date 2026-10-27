@@ -1,0 +1,44 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import EntryCard from '../components/EntryCard.astro';
+import { pathFor } from '../lib/paths';
+
+const experience = (await getCollection('experience')).sort((a, b) => a.data.order - b.data.order);
+const research = (await getCollection('research')).sort((a, b) => a.data.order - b.data.order);
+const featured = [
+  ...experience.filter((item) => item.data.featured).map((item) => ({ ...item, href: `/experience/${item.id}/` })),
+  ...research.filter((item) => item.data.featured).map((item) => ({ ...item, href: `/research/${item.id}/` })),
+];
+---
+
+<BaseLayout title="Home" description="Nicole Lyu's portfolio: AI systems, research, and projects." active="home">
+  <section class="hero">
+    <div class="hero-meta"><span>01 / INTRODUCTION</span><span>SCROLL TO EXPLORE ↓</span></div>
+    <div class="hero-main">
+      <p class="hero-overline">ENGINEER <span>·</span> RESEARCHER <span>·</span> BUILDER</p>
+      <h1>HEY, I'M<br /><span>NICOLE.</span></h1>
+      <p class="hero-description">I build AI systems that make ambitious ideas usable.</p>
+    </div>
+    <div class="hero-bottom"><span>TECHNOLOGY, RESEARCH, AND EVERYTHING IN BETWEEN.</span><span>BASED IN PITTSBURGH, PA</span></div>
+  </section>
+
+  <section class="statement-band" aria-label="Introduction">
+    <span class="eyebrow">A LITTLE ABOUT ME</span>
+    <p>From machine learning infrastructure to responsible AI research, I work where complex technology meets real people.</p>
+  </section>
+
+  <section class="content-section" aria-labelledby="selected-work-title">
+    <div class="section-heading"><div><span class="eyebrow">02 / EXPLORE</span><h2 id="selected-work-title">SELECTED WORK</h2></div><a class="text-link" href={pathFor('/experience/')}>ALL EXPERIENCE ↗</a></div>
+    <div class="card-grid">
+      {featured.map((item, index) => <EntryCard number={String(index + 1).padStart(2, '0')} eyebrow={item.data.eyebrow} title={item.data.title} description={item.data.description} period={item.data.period} href={item.href} />)}
+    </div>
+  </section>
+
+  <section class="research-band">
+    <div><span class="eyebrow">03 / CURRENT CURIOSITIES</span><h2>BUILDING WITH<br /><em>INTENTION.</em></h2></div>
+    <div class="research-band-side"><p>Questions about reliability, accountability, and useful AI shape the work I choose to do.</p><a class="outline-link" href={pathFor('/research/')}>EXPLORE RESEARCH & PROJECTS <span aria-hidden="true">↗</span></a></div>
+  </section>
+
+  <section class="writing-teaser"><div><span class="eyebrow">04 / NOTES IN PROGRESS</span><h2>WRITING</h2></div><p>A space for ideas, experiments, and things I’m learning. First posts are on the way.</p><a class="text-link" href={pathFor('/writing/')}>VISIT WRITING ↗</a></section>
+</BaseLayout>

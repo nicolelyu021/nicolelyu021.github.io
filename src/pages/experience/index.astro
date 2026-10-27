@@ -1,0 +1,11 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import EntryCard from '../../components/EntryCard.astro';
+
+const entries = (await getCollection('experience')).sort((a, b) => a.data.order - b.data.order);
+---
+<BaseLayout title="Experience" description="Nicole Lyu's experience building AI systems and technology products." active="experience">
+  <section class="page-intro"><span class="eyebrow">01 / EXPERIENCE</span><h1>WORK THAT<br /><span>MAKES IT REAL.</span></h1><p>Selected roles across AI infrastructure, applied AI, and technology consulting.</p></section>
+  <section class="listing" aria-label="Experience entries">{entries.map((item, index) => <EntryCard number={String(index + 1).padStart(2, '0')} eyebrow={item.data.organization} title={item.data.title} description={item.data.description} period={item.data.period} href={`/experience/${item.id}/`} />)}</section>
+</BaseLayout>
