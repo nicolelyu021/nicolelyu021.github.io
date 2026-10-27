@@ -14,7 +14,7 @@ A personal portfolio that feels editorial and immersive: broad sections, confide
 | Quiet surface | `#F2F2F2` light gray |
 | Optional soft surface | `#F7E9EF` pale blush |
 
-Square corners throughout. Minimal motion: only small hover color changes and native scrolling, with reduced-motion support. No profile photo in the initial version.
+Square corners throughout. Use one electric fuchsia for accents, with black small text where fuchsia would be hard to read. Minimal motion: only small hover color changes and native scrolling, with reduced-motion support. No profile photo in the initial version.
 
 ## Site structure
 
@@ -26,7 +26,7 @@ Square corners throughout. Minimal motion: only small hover color changes and na
 ## Homepage reading journey
 
 - **01 / Introduction:** Keep the assertive name treatment, with the positioning sentence visible in a short laptop viewport.
-- **02 / Experience:** Show the three professional roles together in reverse chronological order. Lead each card with the company, then industry context and role, then one concrete contribution. Keep research projects out of this section, matching the Experience navigation tab. Use the same content order on the Experience page and detail pages; retain thematic work titles inside the detailed stories.
+- **02 / Experience:** Show the three professional roles together in reverse chronological order. Lead each card with the company, then industry context and role, then one concrete contribution. Keep research projects out of this section, matching the Experience navigation tab. Use the same content order on the Experience page and detail pages; make role titles prominent with black type and a fuchsia edge, and retain thematic work titles inside the detailed stories.
 - **03 / Research + Projects:** Preserve “BUILDING WITH INTENTION.” and the paragraph about reliability, accountability, and useful AI. Use a light gray surface and the same electric fuchsia on “INTENTION.” and the button frame; keep smaller labels and arrow text near black for clarity. Keep the narrative composition rather than adding project cards here.
 - **04 / Writing:** Continue as the restrained preview for future posts.
 
