@@ -31,6 +31,6 @@ Add a Markdown file to a collection to create a page. Set `featured: true` on ex
 
 ## Existing GitHub repository
 
-The repository [`nicolelyu021/nicolelyu021.github.io`](https://github.com/nicolelyu021/nicolelyu021.github.io) already exists. The local `origin` points to it, and its one-file history has been merged into this local project. The site has **not** been uploaded or published yet.
+The repository [`nicolelyu021/nicolelyu021.github.io`](https://github.com/nicolelyu021/nicolelyu021.github.io) already exists. The local `origin` points to it, and its one-file history has been merged into this local project. The site is uploaded to the `site-v1` review branch in [draft pull request #1](https://github.com/nicolelyu021/nicolelyu021.github.io/pull/1). It has **not** been merged or published as the homepage.
 
 Before publishing, review the public copy, especially employer and research descriptions. Then push `main` to the existing repository, choose **GitHub Actions** under **Settings → Pages → Build and deployment → Source**, and let the included workflow build and deploy the site at `https://nicolelyu021.github.io/`.
