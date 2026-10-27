@@ -1,15 +1,14 @@
 ---
 title: "Applied AI for Everyday Workflows"
-description: "From LLM experiments to a production Chrome extension for real-time suggestions."
+description: "Took AI outreach from experiments to a production Chrome extension for B2B sales workflows."
 period: "2024—2025"
 eyebrow: "APPLIED AI"
 featured: true
 order: 2
 organization: "Meet Magellan"
+context: "B2B sales automation startup"
 role: "AI Engineer"
 ---
-
-## The work
 
 I built Python workflows that combined language models with customer data to support B2B outreach. I also designed prompt experiments and evaluation methods that tracked quality, engagement, latency, token usage, and cost.
 

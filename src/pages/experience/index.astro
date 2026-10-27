@@ -1,11 +1,11 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import EntryCard from '../../components/EntryCard.astro';
+import ExperienceCard from '../../components/ExperienceCard.astro';
 
 const entries = (await getCollection('experience')).sort((a, b) => a.data.order - b.data.order);
 ---
 <BaseLayout title="Experience" description="Nicole Lyu's experience building AI systems and technology products." active="experience">
-  <section class="page-intro"><span class="eyebrow">01 / EXPERIENCE</span><h1>WORK THAT<br /><span>MAKES IT REAL.</span></h1><p>Selected roles across AI infrastructure, applied AI, and technology consulting.</p></section>
-  <section class="listing" aria-label="Experience entries">{entries.map((item, index) => <EntryCard number={String(index + 1).padStart(2, '0')} eyebrow={item.data.organization} title={item.data.title} description={item.data.description} period={item.data.period} href={`/experience/${item.id}/`} />)}</section>
+  <section class="page-intro"><span class="eyebrow">01 / EXPERIENCE</span><h1>WORK THAT<br /><span>MAKES IT REAL.</span></h1><p>My work spans technology consulting, AI for B2B sales automation at a startup, and AI/ML infrastructure at a hedge fund.</p></section>
+  <section class="listing" aria-label="Experience entries">{entries.map((item, index) => <ExperienceCard number={String(index + 1).padStart(2, '0')} organization={item.data.organization} context={item.data.context} role={item.data.role} description={item.data.description} period={item.data.period} href={`/experience/${item.id}/`} />)}</section>
 </BaseLayout>

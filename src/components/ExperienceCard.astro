@@ -1,0 +1,20 @@
+---
+import { pathFor } from '../lib/paths';
+
+interface Props {
+  number: string;
+  organization: string;
+  context: string;
+  role: string;
+  description: string;
+  period: string;
+  href: string;
+}
+const { number, organization, context, role, description, period, href } = Astro.props;
+---
+
+<a class="entry-card experience-card" href={pathFor(href)}>
+  <div class="entry-card-top"><span>{number} / {context}</span><span>{period}</span></div>
+  <div class="experience-card-main"><h3>{organization}</h3><p class="experience-role">{role}</p></div>
+  <div class="entry-card-bottom"><p>{description}</p><span class="card-arrow" aria-hidden="true">↗</span></div>
+</a>

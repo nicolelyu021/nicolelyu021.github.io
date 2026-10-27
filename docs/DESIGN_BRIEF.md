@@ -26,7 +26,7 @@ Square corners throughout. Minimal motion: only small hover color changes and na
 ## Homepage reading journey
 
 - **01 / Introduction:** Keep the assertive name treatment, with the positioning sentence visible in a short laptop viewport.
-- **02 / Experience:** Show the three professional roles together. Keep research projects out of this section, matching the Experience navigation tab.
+- **02 / Experience:** Show the three professional roles together in reverse chronological order. Lead each card with the company, then industry context and role, then one concrete contribution. Keep research projects out of this section, matching the Experience navigation tab. Use the same content order on the Experience page and detail pages; retain thematic work titles inside the detailed stories.
 - **03 / Research + Projects:** Preserve “BUILDING WITH INTENTION.” and the paragraph about reliability, accountability, and useful AI. Use a light gray surface and the same electric fuchsia on “INTENTION.” and the button frame; keep smaller labels and arrow text near black for clarity. Keep the narrative composition rather than adding project cards here.
 - **04 / Writing:** Continue as the restrained preview for future posts.
 

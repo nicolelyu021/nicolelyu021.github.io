@@ -16,6 +16,7 @@ const experience = defineCollection({
   schema: z.object({
     ...shared,
     organization: z.string(),
+    context: z.string(),
     role: z.string(),
   }),
 });
