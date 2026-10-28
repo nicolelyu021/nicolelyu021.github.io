@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#f5f5f5"/>
+  <path d="M64 64H1216M64 656H1216" stroke="#d2d2d2" stroke-width="2"/>
+  <text x="70" y="124" fill="#111111" font-family="Arial, sans-serif" font-size="28" font-weight="700" letter-spacing="3">HACKCMU 2026 / THE PITCH</text>
+  <text x="62" y="348" fill="#111111" font-family="Arial, sans-serif" font-size="182" font-weight="700" letter-spacing="-14">pinlog.</text>
+  <text x="72" y="425" fill="#111111" font-family="Arial, sans-serif" font-size="38">Turn the trip into a story.</text>
+  <rect x="72" y="514" width="390" height="92" fill="#fe2bbe"/>
+  <path d="M112 542v37l35-18.5z" fill="#111111"/>
+  <text x="177" y="575" fill="#111111" font-family="Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="2">PLAY VIDEO</text>
+  <text x="916" y="586" fill="#555555" font-family="Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="2">PINLOG / 2026</text>
+</svg>

@@ -1,0 +1,11 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { pathFor } from '../../lib/paths';
+
+const posts = (await getCollection('blog', ({ data }) => !data.draft)).sort((a, b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf());
+---
+<BaseLayout title="Writing" description="Notes and writing by Nicole Lyu." active="writing">
+  <section class="page-intro"><span class="eyebrow">03 / WRITING</span><h1>THINGS I'M<br /><span>THINKING ABOUT.</span></h1><p>Ideas, experiments, and lessons from the work.</p></section>
+  <section class="listing writing-list" aria-label="Writing entries">{posts.length ? posts.map((post) => <a class="writing-item" href={pathFor(`/writing/${post.id}/`)}><span>{post.data.publishedAt.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' })}</span><div><h2>{post.data.title}</h2><p>{post.data.description}</p></div><span aria-hidden="true">↗</span></a>) : <div class="empty-writing"><span class="eyebrow">COMING SOON</span><p>This section is ready for Nicole's first post.</p></div>}</section>
+</BaseLayout>

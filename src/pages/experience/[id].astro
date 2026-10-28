@@ -1,0 +1,16 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { pathFor } from '../../lib/paths';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('experience');
+  return entries.map((entry) => ({ params: { id: entry.id }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+<BaseLayout title={entry.data.organization} description={entry.data.description} active="experience">
+  <article class="detail-page experience-detail"><a class="back-link" href={pathFor('/experience/')}>← ALL EXPERIENCE</a><span class="eyebrow">{entry.data.context} / {entry.data.period}</span><h1>{entry.data.organization}</h1><p class="detail-role">{entry.data.role}</p><p class="detail-lead">{entry.data.description}</p><div class="detail-meta"><span>EXPERIENCE</span><span>{entry.data.period}</span></div><div class="prose"><h2>{entry.data.title}</h2><Content /></div></article>
+</BaseLayout>
