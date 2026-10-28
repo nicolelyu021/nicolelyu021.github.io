@@ -53,6 +53,6 @@ npm run build
 
 ## GitHub Pages
 
-The repository is [`nicolelyu021/nicolelyu021.github.io`](https://github.com/nicolelyu021/nicolelyu021.github.io). The new portfolio is in [draft pull request #1](https://github.com/nicolelyu021/nicolelyu021.github.io/pull/1) on the `site-v1` branch. Pushing `site-v1` updates that review copy; it does not update the live page.
+The repository is [`nicolelyu021/nicolelyu021.github.io`](https://github.com/nicolelyu021/nicolelyu021.github.io). The portfolio was published through [pull request #1](https://github.com/nicolelyu021/nicolelyu021.github.io/pull/1). Updates merged into `main` trigger the GitHub Pages workflow.
 
-The shareable address is **https://nicolelyu021.github.io/**. It currently shows the older placeholder. To publish this portfolio after reviewing the public copy, select **GitHub Actions** in **Settings → Pages → Build and deployment → Source**, then merge the draft PR into `main`. The workflow in `.github/workflows/deploy.yml` builds and deploys the site. Check that the deployment succeeds before sharing the URL.
+The shareable address is **https://nicolelyu021.github.io/**. GitHub Pages uses **GitHub Actions** as its source. The workflow in `.github/workflows/deploy.yml` builds and deploys the site after a push to `main`. Confirm the workflow succeeds after future changes.
