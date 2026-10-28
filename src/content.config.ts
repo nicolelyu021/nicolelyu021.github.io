@@ -27,6 +27,7 @@ const research = defineCollection({
     ...shared,
     kind: z.enum(['Research', 'Project']),
     externalUrl: z.url().optional(),
+    pitchVideo: z.string().startsWith('/').optional(),
   }),
 });
 

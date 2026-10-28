@@ -9,21 +9,21 @@ Updated 2026-10-27.
 - GitHub Pages workflow. The existing public repository `nicolelyu021/nicolelyu021.github.io` is connected. The site is on the `site-v1` review branch in draft PR #1 (https://github.com/nicolelyu021/nicolelyu021.github.io/pull/1); it has not been merged or published as the homepage.
 - README architecture map and update guide for future work.
 - Design system from the supplied palette and layout screenshots. The homepage hero has been tightened for a 13-inch laptop viewport; Section 02 now shows only the three experience roles; Section 03 uses a light surface with fuchsia accents and keeps its existing narrative copy. Large accents on the Experience and Writing pages now use the same electric fuchsia; job titles have stronger black type and a fuchsia edge. See `docs/DESIGN_BRIEF.md`.
-- First-draft public summaries from Nicole's resumes. Experience cards now identify Millennium Management, Meet Magellan, and Deloitte Consulting by company, setting, role, and contribution. These summaries need Nicole's review before publication; the Millennium detail is based on her resume and its technical specifics need particular review.
+- Experience cards identify Millennium Management, Meet Magellan, and Deloitte Consulting by company, setting, role, and contribution. Nicole reviewed the three experience pages and supplied the Millennium timing and audience: a deployment that typically took about a week could take roughly 15 minutes through her portal, especially for business users with working code but little deployment experience.
 
 ## Source materials
 
 - Design screenshots and palette: project root, `~/Documents/Nicole_Blog/` (excluded from Git).
 - Research resume: `~/Documents/Nicole_Blog/Nicole Lyu Resume 2026 Oct-Research.pdf`.
 - General resume: `~/Documents/Nicole_Blog/Nicole_Lyu_Resume_2026_Sept.pdf`.
-- Pinlog HackCMU project: `~/Documents/CMU/Hackathon/HackCMU_2026/HackCMU_2026/`.
+- Pinlog HackCMU project: `~/Documents/CMU/Hackathon/HackCMU_2026/HackCMU_2026/`. Nicole supplied the pitch video `Hackathon_pinlog_pitch_final.mp4` in the project root; its public copy is `public/videos/pinlog-pitch.mp4`. She described her contribution as proposing the idea from personal experience and persuading the team to pursue it.
 - The earlier ChatGPT conversation, “Nicole Blog Brainstorm,” contains additional discussion, but its assistant messages were not fully retrievable in this handoff. The explicit decisions preserved in this project were supplied with the current request.
 
 ## Open decisions before publishing
 
 1. The final website folder is `~/Documents/Nicole_Blog`, as Nicole chose. The current chat's desktop project still points to `~/Documents/ChatGPT/Nicole Blog`; update the project's primary folder to the chosen location for future chats.
 2. Approve or revise the home-page positioning line and all public project descriptions.
-3. Add Nicole's exact contribution and final outcome for Pinlog; add other research or project pieces if desired.
+3. Pinlog now includes Nicole's stated ideation contribution and playable pitch video. Add the final demo outcome if Nicole wants to share it; add other research or project pieces if desired.
 4. Choose the first blog post and any LinkedIn or other links to publish.
 5. After content review, mark draft PR #1 ready and merge it into `main`, then choose GitHub Actions as the Pages source.
 

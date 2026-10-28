@@ -28,6 +28,7 @@ src/
 ├── styles/global.css      Colors, typography, and responsive layout
 └── lib/paths.ts           Internal links that work on GitHub Pages
 .github/workflows/deploy.yml  Builds and deploys after a push to main
+public/videos/              Video assets served by the site
 docs/                       Design decisions and handoff notes
 ```
 
@@ -37,7 +38,7 @@ Content flows from the Markdown collections into Astro pages. `npm run build` ge
 
 - Edit `src/pages/index.astro` for homepage structure and its introduction.
 - Edit `src/content/experience/*.md` for company, role, dates, and experience copy. All experience entries appear on the homepage and Experience page, ordered by `order`.
-- Edit `src/content/research/*.md` for research and project pages. The Research + Projects page lists the collection entries.
+- Edit `src/content/research/*.md` for research and project pages. The Research + Projects page lists the collection entries. Pinlog uses `pitchVideo` to point to its MP4 in `public/videos/`.
 - Add a Markdown file in `src/content/blog/` for a post. Set `draft: false` when it is ready to appear on the Writing page.
 - Edit `src/styles/global.css` for the visual design, `src/layouts/BaseLayout.astro` for shared navigation and footer, and `src/content.config.ts` when adding or changing content fields.
 
