@@ -1,5 +1,6 @@
 ---
 import { pathFor } from '../lib/paths';
+import DiagonalArrow from '../components/DiagonalArrow.astro';
 import '../styles/global.css';
 
 interface Props {
@@ -44,8 +45,8 @@ const nav = [
         <span class="eyebrow">LET'S CONNECT</span>
         <p>Interested in AI systems, research, or a good question?</p>
       </div>
-      <a class="footer-contact" href="mailto:nicolely@andrew.cmu.edu">SAY HELLO <span aria-hidden="true">↗</span></a>
-      <div class="footer-bottom"><span>© {new Date().getFullYear()} NICOLE LYU</span><a href="https://github.com/nicolelyu021" target="_blank" rel="noopener noreferrer">GITHUB ↗</a></div>
+      <a class="footer-contact" href="mailto:nicolely@andrew.cmu.edu">SAY HELLO <DiagonalArrow /></a>
+      <div class="footer-bottom"><span>© {new Date().getFullYear()} NICOLE LYU</span><a href="https://github.com/nicolelyu021" target="_blank" rel="noopener noreferrer">GITHUB <DiagonalArrow /></a></div>
     </footer>
   </body>
 </html>

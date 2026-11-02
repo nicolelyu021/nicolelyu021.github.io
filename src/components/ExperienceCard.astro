@@ -1,5 +1,6 @@
 ---
 import { pathFor } from '../lib/paths';
+import DiagonalArrow from './DiagonalArrow.astro';
 
 interface Props {
   number: string;
@@ -16,5 +17,5 @@ const { number, organization, context, role, description, period, href } = Astro
 <a class="entry-card experience-card" href={pathFor(href)}>
   <div class="entry-card-top"><span>{number} / {context}</span><span>{period}</span></div>
   <div class="experience-card-main"><h3>{organization}</h3><p class="experience-role">{role}</p></div>
-  <div class="entry-card-bottom"><p>{description}</p><span class="card-arrow" aria-hidden="true">↗</span></div>
+  <div class="entry-card-bottom"><p>{description}</p><span class="card-arrow"><DiagonalArrow /></span></div>
 </a>

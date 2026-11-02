@@ -7,7 +7,7 @@ This is Nicole Lyu's personal portfolio/blog. Use Astro as a static site with Gi
 - Editorial, immersive, full-width composition inspired by The Chemistry Brand, without copying its assets or UI.
 - Palette: electric fuchsia `#FE2BBE`, near black `#111111`, white `#FFFFFF`, light gray, optional pale blush `#F7E9EF`.
 - Square corners, large typography, generous space, tab-like navigation, minimal motion.
-- No profile photograph for the first version.
+- The homepage hero now includes Nicole's original pink-shirt portrait in a square-cornered frame. Keep its natural colors and a static treatment.
 - Content collections: experience, research/projects, blog.
 
 ## Content rules

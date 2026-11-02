@@ -1,6 +1,6 @@
 # Nicole Blog — handoff
 
-Updated 2026-10-27.
+Updated 2026-11-02.
 
 ## What is ready
 
@@ -10,6 +10,7 @@ Updated 2026-10-27.
 - README architecture map and update guide for future work.
 - Design system from the supplied palette and layout screenshots. The homepage hero has been tightened for a 13-inch laptop viewport; Section 02 now shows only the three experience roles; Section 03 uses a light surface with fuchsia accents and keeps its existing narrative copy. Large accents on the Experience and Writing pages now use the same electric fuchsia; job titles have stronger black type and a fuchsia edge. See `docs/DESIGN_BRIEF.md`.
 - Experience cards identify Millennium Management, Meet Magellan, and Deloitte Consulting by company, setting, role, and contribution. Nicole reviewed the three experience pages and supplied the Millennium timing and audience: a deployment that typically took about a week could take roughly 15 minutes through her portal, especially for business users with working code but little deployment experience.
+- The homepage hero uses `public/images/main-page-photo.jpg`, copied from Nicole's original `Main_page_photo.JPG`, beside the headline on desktop and below it on mobile. All diagonal link arrows use the shared `DiagonalArrow.astro` component and `public/images/nicole-editorial-arrow.svg`, copied byte-for-byte from Nicole's `nicole-editorial-arrow-outline.svg`. Preserve its transparent interior, fuchsia outline, proportions, and subtle hover movement.
 
 ## Source materials
 
