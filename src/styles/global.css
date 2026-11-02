@@ -24,3 +24,21 @@ a:focus-visible{outline:3px solid var(--pink);outline-offset:4px}
 @media(max-width:850px){.statement-band{grid-template-columns:1fr;gap:24px}.research-band{grid-template-columns:1fr;gap:35px}.writing-teaser{grid-template-columns:1fr 1fr}.writing-teaser .text-link{grid-column:1/-1;justify-self:start}.hero{min-height:690px}.hero h1{font-size:clamp(4.7rem,11vw,8rem)}}
 @media(max-width:600px){.masthead{height:65px}.masthead-note{font-size:.6rem}.site-nav a{font-size:.62rem;min-height:53px;padding:7px 4px}.hero{min-height:calc(100svh - 118px);max-height:800px}.hero-meta,.hero-bottom{font-size:.6rem}.hero-meta span:last-child,.hero-bottom span:last-child{display:none}.hero-main{padding:40px 0}.hero h1{font-size:clamp(4.3rem,17vw,7rem)}.hero-description{font-size:1.2rem}.card-grid,.listing,.experience-grid{grid-template-columns:1fr}.entry-card{min-height:270px}.section-heading{align-items:start;flex-direction:column;gap:18px}.research-band{min-height:0}.research-band h2{font-size:clamp(2.8rem,10.5vw,5.5rem)}.writing-teaser{grid-template-columns:1fr}.site-footer{grid-template-columns:1fr;gap:45px}.footer-contact{justify-self:start}.page-intro{min-height:430px}.page-intro h1{font-size:clamp(3.5rem,13vw,6rem)}.detail-page{padding-bottom:80px}.back-link{margin-bottom:70px}.detail-meta{flex-direction:column}.writing-item{grid-template-columns:1fr 35px}.writing-item>span:first-child{grid-column:1/-1}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.entry-card{transition:none}}
+
+/* Portrait and shared diagonal link mark. */
+.hero-main{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(280px,.85fr);align-items:center;gap:clamp(24px,4vw,64px)}
+.hero-copy{min-width:0}
+.hero-portrait{display:block;width:100%;height:auto;max-height:520px;aspect-ratio:4/5;object-fit:cover;object-position:center;border-radius:0}
+.diagonal-arrow{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;flex:none;vertical-align:middle;transition:transform .18s ease}
+.diagonal-arrow img{display:block;width:100%;height:100%}
+a:hover .diagonal-arrow,a:focus-visible .diagonal-arrow{transform:translate(2px,-2px)}
+.text-link{display:inline-flex;align-items:center;gap:.45em}
+.text-link .diagonal-arrow,.footer-bottom .diagonal-arrow{width:32px;height:32px}
+.card-arrow .diagonal-arrow{width:40px;height:40px}
+.footer-contact{display:inline-flex;align-items:center;gap:.12em}
+.footer-contact .diagonal-arrow{width:40px;height:40px}
+.footer-bottom a{display:inline-flex;align-items:center;gap:.4em}
+.writing-item>.diagonal-arrow{justify-self:end;width:40px;height:40px}
+@media(max-width:850px){.hero-main{grid-template-columns:1fr;gap:30px}.hero-portrait{width:min(45vw,330px);max-height:none;aspect-ratio:3/4}}
+@media(max-width:600px){.hero{max-height:none}.hero-main{gap:28px;padding:36px 0}.hero-portrait{width:min(62vw,310px)}}
+@media(prefers-reduced-motion:reduce){.diagonal-arrow{transition:none}}
